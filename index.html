@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>22cm以下でも選べる靴がある｜小さいサイズ専門店 創業40年 LADIES'KID 池袋</title>
-  <meta name="description" content="足が小さくて合う靴がない…そのお悩み、解決できます。創業40年・常時300種類以上・シューフィッター在籍。20cmから対応の婦人靴専門店レディースキッドが、あなたの一足を見つけます。池袋駅近。">
+  <title>足が小さくて合う靴がない…その痛み、今日で終わりにしませんか｜LADIES'KID 池袋</title>
+  <meta name="description" content="足が小さいのはあなたのせいではありません。バンドエイドが手放せない・踵がパカパカ・冠婚葬祭で毎回パニック…そのお悩み、創業40年・シューフィッター在籍のレディースキッドが解決します。">
   <link rel="canonical" href="https://yourwebsite.com/small-size">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="22cm以下でも選べる靴がある｜小さいサイズ専門店 LADIES'KID">
-  <meta property="og:description" content="足が小さくて合う靴がない…そのお悩み、解決できます。創業40年・常時300種類以上・シューフィッター在籍。">
+  <meta property="og:title" content="足が小さくて合う靴がない…その痛み、今日で終わりにしませんか｜LADIES'KID">
+  <meta property="og:description" content="バンドエイドが手放せない・踵パカパカ・冠婚葬祭でパニック…創業40年・シューフィッター在籍の婦人靴専門店が解決します。">
   <meta property="og:url" content="https://yourwebsite.com/small-size">
-  <meta property="og:image" content="https://yourwebsite.com/images/TOP.png">
+  <meta property="og:image" content="https://yourwebsite.com/images/shop.png">
   <meta property="og:site_name" content="LADIES'KID（レディースキッド）">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
@@ -57,6 +57,8 @@
       --navy-mid: #253660;
       --gold:     #c4956a;
       --gold-lt:  #dbb48e;
+      --red:      #c0392b;
+      --red-lt:   #e74c3c;
       --cream:    #faf8f5;
       --cream-dk: #f0ece4;
       --text:     #2a2a2a;
@@ -78,95 +80,126 @@
     .lp-header {
       background: var(--navy);
       padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       position: sticky; top: 0; z-index: 100;
       box-shadow: 0 2px 12px var(--shadow-lg);
     }
     .lp-header-logo { font-family: var(--serif); color: var(--white); font-size: 0.95rem; letter-spacing: 0.12em; }
     .lp-header-logo span { color: var(--gold); }
-    .header-tel { color: var(--gold); font-family: var(--serif); font-size: 1.1rem; letter-spacing: 0.08em; text-decoration: none; font-weight: 700; }
-    .header-tel small { display: block; color: rgba(255,255,255,0.6); font-size: 0.6rem; letter-spacing: 0.1em; font-family: var(--sans); font-weight: 400; text-align: right; }
+    .header-tel { color: var(--gold); font-family: var(--serif); font-size: 1.05rem; letter-spacing: 0.08em; text-decoration: none; font-weight: 700; }
+    .header-tel small { display: block; color: rgba(255,255,255,0.6); font-size: 0.6rem; font-family: var(--sans); font-weight: 400; text-align: right; }
 
     /* ===== HERO ===== */
-    .hero {
-      background: linear-gradient(150deg, var(--navy) 0%, #243058 55%, #1e3a6e 100%);
-      color: var(--white);
-      overflow: hidden;
-    }
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
-      min-height: 520px;
-    }
+    .hero { background: linear-gradient(150deg, #0d1a30 0%, #1a2744 55%, #1e3a6e 100%); color: var(--white); overflow: hidden; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 560px; }
     .hero-text { padding: 60px 40px 60px 24px; display: flex; flex-direction: column; justify-content: center; }
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 0.7rem; letter-spacing: 0.22em;
-      color: var(--gold); border: 1px solid var(--gold);
-      padding: 4px 14px; border-radius: 50px; margin-bottom: 24px;
-      width: fit-content;
+    .hero-question {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      line-height: 1.55;
+      margin-bottom: 20px;
     }
-    .hero h1 { font-family: var(--serif); font-size: clamp(1.4rem, 3.5vw, 2.2rem); line-height: 1.6; margin-bottom: 22px; }
-    .hero h1 em { font-style: normal; color: var(--gold-lt); display: block; }
-    .hero-lead { font-size: 0.9rem; opacity: 0.88; line-height: 2; margin-bottom: 28px; }
+    .hero-question em { font-style: normal; color: var(--gold-lt); display: block; font-size: clamp(1.1rem, 2.5vw, 1.6rem); }
+    .hero-sub {
+      font-size: 0.9rem; line-height: 2; opacity: 0.88; margin-bottom: 28px;
+      border-left: 3px solid var(--gold); padding-left: 16px;
+    }
     .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
     .badge { font-size: 0.72rem; color: var(--navy); background: var(--gold); padding: 4px 12px; border-radius: 4px; font-weight: 700; }
-    .tel-big { display: inline-block; color: var(--gold-lt); font-family: var(--serif); font-size: 1.8rem; text-decoration: none; letter-spacing: 0.1em; font-weight: 700; }
-    .tel-note { font-size: 0.75rem; opacity: 0.6; margin-top: 4px; }
+    .hero-tel-wrap a { display: block; color: var(--gold-lt); font-family: var(--serif); font-size: 1.8rem; text-decoration: none; letter-spacing: 0.1em; font-weight: 700; }
+    .hero-tel-wrap small { font-size: 0.75rem; opacity: 0.6; }
     .hero-img { overflow: hidden; }
-    .hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; min-height: 520px; }
+    .hero-img img { width: 100%; height: 100%; min-height: 560px; object-fit: cover; object-position: center; }
 
-    /* ===== SECTION BASE ===== */
+    /* ===== SECTION ===== */
     .section { padding: 72px 24px; }
     .section.bg-white { background: var(--white); }
     .section.bg-cream { background: var(--cream); }
     .section.bg-dark { background: var(--navy); color: var(--white); }
     .section.bg-creamdark { background: var(--cream-dk); }
+    .section.bg-charcoal { background: #1c1c1c; color: var(--white); }
+    .section.bg-red { background: linear-gradient(135deg, #8b1a1a, #c0392b); color: var(--white); }
 
     .section-eyebrow { display: block; font-size: 0.7rem; letter-spacing: 0.24em; color: var(--gold); text-align: center; margin-bottom: 14px; font-weight: 700; }
-    .section-title {
-      font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.7rem);
-      color: var(--navy); text-align: center; margin-bottom: 14px; line-height: 1.55;
-    }
-    .section.bg-dark .section-title { color: var(--white); }
+    .section-title { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.75rem); color: var(--navy); text-align: center; margin-bottom: 14px; line-height: 1.55; }
+    .section.bg-dark .section-title,
+    .section.bg-charcoal .section-title,
+    .section.bg-red .section-title { color: var(--white); }
     .section-title::after { content: ''; display: block; width: 48px; height: 2px; background: var(--gold); margin: 14px auto 0; }
-    .section-lead { text-align: center; color: var(--text-mid); max-width: 620px; margin: 0 auto 48px; font-size: 0.93rem; line-height: 2; }
-    .section.bg-dark .section-lead { color: rgba(255,255,255,0.75); }
+    .section-lead { text-align: center; color: var(--text-mid); max-width: 640px; margin: 0 auto 48px; font-size: 0.93rem; line-height: 2; }
+    .section.bg-dark .section-lead,
+    .section.bg-charcoal .section-lead,
+    .section.bg-red .section-lead { color: rgba(255,255,255,0.78); }
 
-    /* ===== 2-col image+text ===== */
-    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 820px; margin: 0 auto; }
-    .split.reverse { }
-    .split-img { border-radius: var(--radius); overflow: hidden; box-shadow: 0 6px 24px var(--shadow-lg); }
-    .split-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
-    .split-img.portrait img { aspect-ratio: 3/4; }
-
-    /* ===== PHOTO STRIP ===== */
+    /* ===== PHOTO ROW ===== */
     .photo-row { display: grid; gap: 4px; }
     .photo-row.col3 { grid-template-columns: repeat(3,1fr); }
     .photo-row.col2 { grid-template-columns: repeat(2,1fr); }
     .photo-row img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 
-    /* ===== EMPATHY ===== */
-    .empathy-list { display: flex; flex-direction: column; gap: 14px; }
-    .empathy-item {
-      background: var(--white); border-radius: var(--radius);
-      padding: 16px 20px 16px 52px; box-shadow: 0 2px 10px var(--shadow);
-      position: relative; font-size: 0.93rem; line-height: 1.75;
-    }
-    .empathy-item::before { content: '✓'; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); font-size: 1rem; color: var(--gold); font-weight: 700; }
+    /* ===== SPLIT ===== */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 820px; margin: 0 auto; }
+    .split-img { border-radius: var(--radius); overflow: hidden; box-shadow: 0 6px 24px var(--shadow-lg); }
+    .split-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .split-img.portrait img { aspect-ratio: 3/4; }
 
-    /* ===== REASON ===== */
-    .reason-box {
-      background: linear-gradient(140deg, var(--navy), #2a4880);
-      color: var(--white); border-radius: 10px; padding: 40px 32px;
-      box-shadow: 0 8px 32px var(--shadow-lg);
+    /* ===== PAIN SYMPTOMS ===== */
+    .pain-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; max-width: 820px; margin: 0 auto 40px; }
+    .pain-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 22px 18px;
+      text-align: center;
     }
+    .pain-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .pain-card h4 { font-family: var(--serif); font-size: 0.95rem; color: #ff9999; margin-bottom: 8px; }
+    .pain-card p { font-size: 0.8rem; color: rgba(255,255,255,0.72); line-height: 1.85; }
+
+    /* ===== VOICE EMPATHY ===== */
+    .voice-list { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .voice-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 22px 20px 62px;
+      box-shadow: 0 2px 12px var(--shadow);
+      position: relative;
+      font-size: 0.93rem;
+      line-height: 1.8;
+    }
+    .voice-item::before {
+      content: attr(data-icon);
+      position: absolute;
+      left: 18px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+    }
+
+    /* ===== LOSS SECTION ===== */
+    .loss-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; max-width: 820px; margin: 0 auto; }
+    .loss-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+    }
+    .loss-card h4 { font-family: var(--serif); font-size: 1rem; color: var(--gold-lt); margin-bottom: 10px; }
+    .loss-card p { font-size: 0.84rem; color: rgba(255,255,255,0.72); line-height: 1.9; }
+
+    /* ===== REASON BOX ===== */
+    .reason-box { background: linear-gradient(140deg, var(--navy), #2a4880); color: var(--white); border-radius: 10px; padding: 40px 32px; box-shadow: 0 8px 32px var(--shadow-lg); }
     .reason-box h3 { font-family: var(--serif); font-size: 1.15rem; line-height: 1.75; margin-bottom: 16px; }
     .reason-box h3 strong { color: var(--gold-lt); }
     .reason-box p { font-size: 0.88rem; opacity: 0.86; line-height: 2; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 860px; margin: 0 auto; }
+    .testi-card { background: var(--white); border-radius: var(--radius); padding: 28px 22px; box-shadow: 0 4px 18px var(--shadow); border-top: 3px solid var(--gold); }
+    .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 8px; letter-spacing: 2px; }
+    .testi-headline { font-family: var(--serif); font-size: 1.0rem; color: var(--navy); margin-bottom: 12px; line-height: 1.55; }
+    .testi-text { font-size: 0.85rem; line-height: 2; color: var(--text); margin-bottom: 14px; }
+    .testi-text em { font-style: normal; font-weight: 700; color: var(--navy); }
+    .testi-author { font-size: 0.76rem; color: var(--text-lt); border-top: 1px solid var(--cream-dk); padding-top: 10px; }
 
     /* ===== STRENGTHS ===== */
     .str-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; max-width: 820px; margin: 0 auto; }
@@ -176,26 +209,6 @@
     .str-card-num { font-size: 0.65rem; letter-spacing: 0.18em; color: var(--gold); font-weight: 700; margin-bottom: 8px; }
     .str-card h3 { font-family: var(--serif); font-size: 1.0rem; color: var(--navy); margin-bottom: 10px; line-height: 1.5; }
     .str-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.9; }
-
-    /* ===== NO-IMG CARD ===== */
-    .str-card.no-img .str-num-big { font-family: var(--serif); font-size: 2.2rem; color: var(--gold); line-height: 1; margin-bottom: 8px; font-weight: 700; padding-top: 24px; padding-left: 22px; }
-
-    /* ===== STORY ===== */
-    .story-para { font-size: 0.95rem; line-height: 2.2; color: var(--text); margin-bottom: 22px; }
-    .story-para strong { color: var(--navy); }
-    .story-quote {
-      font-family: var(--serif); font-size: 1.05rem; color: var(--navy);
-      border-left: 4px solid var(--gold); padding: 14px 20px; margin: 22px 0;
-      background: var(--cream-dk); border-radius: 0 var(--radius) var(--radius) 0; line-height: 1.8;
-    }
-
-    /* ===== TESTIMONIALS ===== */
-    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 860px; margin: 0 auto; }
-    .testi-card { background: var(--white); border-radius: var(--radius); padding: 24px 22px; box-shadow: 0 4px 18px var(--shadow); }
-    .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 2px; }
-    .testi-text { font-size: 0.88rem; line-height: 2; color: var(--text); margin-bottom: 14px; }
-    .testi-text em { font-style: normal; font-weight: 700; color: var(--navy); }
-    .testi-author { font-size: 0.76rem; color: var(--text-lt); border-top: 1px solid var(--cream-dk); padding-top: 10px; }
 
     /* ===== FLOW ===== */
     .flow-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 820px; margin: 0 auto; }
@@ -210,15 +223,15 @@
     /* ===== FAQ ===== */
     .faq-list { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
     .faq-item { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: 0 2px 10px var(--shadow); }
-    .faq-q { padding: 16px 20px; font-weight: 700; font-size: 0.9rem; color: var(--navy); display: flex; gap: 10px; align-items: flex-start; }
-    .faq-q::before { content: 'Q'; color: var(--gold); font-family: var(--serif); font-size: 1.05rem; flex-shrink: 0; margin-top: 1px; }
-    .faq-a { padding: 0 20px 16px; font-size: 0.86rem; color: var(--text-mid); line-height: 1.9; display: flex; gap: 10px; align-items: flex-start; }
-    .faq-a::before { content: 'A'; color: var(--navy); font-family: var(--serif); font-size: 1.05rem; flex-shrink: 0; margin-top: 1px; }
+    .faq-q { padding: 16px 20px; font-weight: 700; font-size: 0.9rem; color: var(--navy); display: flex; gap: 10px; }
+    .faq-q::before { content: 'Q'; color: var(--gold); font-family: var(--serif); font-size: 1.05rem; flex-shrink: 0; }
+    .faq-a { padding: 0 20px 16px; font-size: 0.86rem; color: var(--text-mid); line-height: 1.9; display: flex; gap: 10px; }
+    .faq-a::before { content: 'A'; color: var(--navy); font-family: var(--serif); font-size: 1.05rem; flex-shrink: 0; }
 
     /* ===== CTA ===== */
     .cta-band { background: linear-gradient(140deg, var(--gold) 0%, #b8834c 100%); padding: 56px 24px; text-align: center; }
-    .cta-band h2 { font-family: var(--serif); font-size: clamp(1.15rem,2.8vw,1.6rem); color: var(--white); margin-bottom: 12px; line-height: 1.6; }
-    .cta-band p { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 32px; line-height: 2; }
+    .cta-band h2 { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.75rem); color: var(--white); margin-bottom: 12px; line-height: 1.6; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 0.92rem; margin-bottom: 32px; line-height: 2; }
     .tel-cta-big { display: inline-block; color: var(--white); font-family: var(--serif); font-size: 2.4rem; text-decoration: none; letter-spacing: 0.12em; font-weight: 700; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 4px; }
     .tel-cta-big:hover { border-color: var(--white); }
     .tel-cta-hours { font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 10px; }
@@ -227,16 +240,19 @@
     .lp-footer { background: #0f1828; color: rgba(255,255,255,0.5); text-align: center; padding: 28px 24px; font-size: 0.78rem; }
     .lp-footer a { color: var(--gold); text-decoration: none; }
 
+    /* ===== UTILS ===== */
+    .highlight-red { color: var(--red-lt); font-weight: 700; }
+    .highlight-gold { color: var(--gold); font-weight: 700; }
+
     /* ===== MOBILE ===== */
     @media (max-width: 680px) {
       .hero-inner, .split, .flow-wrap { grid-template-columns: 1fr; }
       .hero-text { padding: 44px 20px 28px; }
       .hero-img img { min-height: 240px; }
-      .str-grid { grid-template-columns: 1fr; }
-      .testi-grid { grid-template-columns: 1fr; }
+      .pain-grid { grid-template-columns: 1fr 1fr; }
+      .loss-grid, .str-grid, .testi-grid { grid-template-columns: 1fr; }
       .photo-row.col3 { grid-template-columns: repeat(2,1fr); }
       .section { padding: 52px 20px; }
-      .split-img.portrait img { aspect-ratio: 16/9; }
     }
   </style>
 </head>
@@ -255,15 +271,14 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="hero-eyebrow">小さいサイズ婦人靴専門店 ／ 創業40年 ／ 池袋</p>
-      <h1>
-        22cmを探して、<br>
-        <em>何年も諦めてきた方へ。</em>
+      <h1 class="hero-question">
+        その靴、<br>また今日も<br>
+        <em>我慢して履きましたか？</em>
       </h1>
-      <p class="hero-lead">
+      <p class="hero-sub">
         足が小さいのは、あなたのせいではありません。<br>
-        ただ、<strong style="color:#dbb48e;">本当に合う靴に出会えていなかっただけ</strong>です。<br>
-        シューフィッターが在籍する専門店に、一度来てみてください。
+        <strong style="color:#dbb48e;">合う靴に、出会えていなかっただけ。</strong><br>
+        創業40年のシューフィッター専門店が、今日こそ終わりにします。
       </p>
       <div class="hero-badges">
         <span class="badge">創業40年</span>
@@ -272,8 +287,10 @@
         <span class="badge">シューフィッター在籍</span>
         <span class="badge">百貨店取引実績あり</span>
       </div>
-      <a href="tel:0339813456" class="tel-big">03-3981-3456</a>
-      <p class="tel-note">営業時間：11:00〜20:00（年中無休）</p>
+      <div class="hero-tel-wrap">
+        <a href="tel:0339813456">03-3981-3456</a>
+        <small>営業時間：11:00〜20:00（年中無休）池袋</small>
+      </div>
     </div>
     <div class="hero-img">
       <img src="images/shop.png" alt="レディースキッド 小さいサイズ婦人靴専門店" loading="eager">
@@ -288,25 +305,97 @@
   <img src="images/608-CHOCO_01.jpg" alt="婦人靴コレクション" loading="lazy">
 </div>
 
-<!-- EMPATHY -->
-<section class="section bg-cream">
+<!-- PAIN — 身体的症状 -->
+<section class="section bg-charcoal">
   <div class="container">
-    <span class="section-eyebrow">PAIN POINT</span>
-    <h2 class="section-title">こんな経験、ありませんか？</h2>
-    <p class="section-lead">足の小さい方が長年感じてきた、靴にまつわるリアルな悩みです。</p>
-    <div class="split">
-      <div class="empathy-list">
-        <div class="empathy-item">百貨店で「そのサイズはご用意がなく…」と言われ続ける</div>
-        <div class="empathy-item">「小さいサイズ」と検索すると子ども靴ばかりヒットする</div>
-        <div class="empathy-item">ネットで買っては返品。"本当に合う一足"が見つからない</div>
-        <div class="empathy-item">踵がパカパカする・前に滑る・靴擦れが慢性化している</div>
-        <div class="empathy-item">冠婚葬祭・フォーマルな場面で「履ける靴がない」とパニックになる</div>
-        <div class="empathy-item">「どうせ私には合う靴がない」と最初から諦めている</div>
+    <span class="section-eyebrow">SYMPTOMS</span>
+    <h2 class="section-title">あなたは今、こんな「症状」と戦っていませんか？</h2>
+    <p class="section-lead">合わない靴を我慢し続けると、こんな身体の問題が起きています。</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">🩹</div>
+        <h4>靴擦れ・マメの慢性化</h4>
+        <p>バンドエイドやテープが手放せない。外出のたびに痛みと戦っている。</p>
       </div>
-      <div class="split-img portrait">
-        <img src="images/ご相談アドバイス.png" alt="靴選びのカウンセリング" loading="lazy">
+      <div class="pain-card">
+        <div class="pain-icon">👣</div>
+        <h4>前滑り・爪トラブル</h4>
+        <p>大きめの靴で足が前に滑り、爪が靴先に当たり続けて黒くなったり割れたりする。</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🦶</div>
+        <h4>踵がパカパカ・不安定</h4>
+        <p>歩行が不安定になり、転倒リスクと足腰への余計な負担が蓄積している。</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🦴</div>
+        <h4>外反母趾の悪化</h4>
+        <p>合わない靴を長年履き続けることで外反母趾・内反小趾が進行。歩くこと自体がストレスに。</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">💆</div>
+        <h4>腰痛・膝痛の遠因に</h4>
+        <p>歩行バランスが崩れ、膝・腰・肩への負担が蓄積。慢性的な痛みの根本原因になっている。</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">😣</div>
+        <h4>「また今日も痛かった」</h4>
+        <p>外出そのものが億劫になる。旅行も、長時間歩くことへの不安が先に来る。</p>
       </div>
     </div>
+    <p style="text-align:center;color:rgba(255,255,255,0.6);font-size:0.85rem;">
+      これらはすべて、<span class="highlight-red">靴が合っていないために起きていること</span>です。<br>
+      あなたの足が悪いのではありません。
+    </p>
+  </div>
+</section>
+
+<!-- EMPATHY — そうそう！の声 -->
+<section class="section bg-cream">
+  <div class="container">
+    <span class="section-eyebrow">VOICE</span>
+    <h2 class="section-title">「そうそう、これなんです…」<br>と言いたくなりませんか？</h2>
+    <p class="section-lead">同じ思いを抱えていたお客様の「本音」です。</p>
+    <div class="voice-list">
+      <div class="voice-item" data-icon="😔">「百貨店で試着をお願いしたら、また『そのサイズはご用意がなく…』。もう聞くのが恥ずかしくなってきた」</div>
+      <div class="voice-item" data-icon="😤">「"小さいサイズ"で検索したら子供靴ばかり。私は子供じゃないのに、いつもキッズコーナーに誘導される」</div>
+      <div class="voice-item" data-icon="😩">「ネットで買っては返品、また買っては返品。時間もお金もかかって、もう疲れた」</div>
+      <div class="voice-item" data-icon="😶">「友達の結婚式のために何軒も回ったけど見つからなくて、結局また古い靴で出席した」</div>
+      <div class="voice-item" data-icon="🥲">「雑誌で素敵な靴を見つけても『どうせ私のサイズはない』と最初から諦めてしまう。おしゃれを楽しむ気持ちが、もうない」</div>
+      <div class="voice-item" data-icon="😤">「スニーカーしか履けないのは個性じゃなくて、他に選択肢がないから。でもそれを言える相手もいない」</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOSS — 煽り・損失の可視化 -->
+<section class="section bg-dark">
+  <div class="container">
+    <span class="section-eyebrow">WHAT YOU LOST</span>
+    <h2 class="section-title">「仕方ない」と諦めてきた間に<br>あなたが失ったもの</h2>
+    <p class="section-lead">我慢の積み重ねは、見えないところで大きな損失になっています。</p>
+    <div class="loss-grid">
+      <div class="loss-card">
+        <h4>おしゃれを楽しむ権利</h4>
+        <p>「足元は諦めた」という言葉が口癖になっていませんか。靴一足で気分が変わること、まだ信じられますか？</p>
+      </div>
+      <div class="loss-card">
+        <h4>フォーマルシーンでの自信</h4>
+        <p>冠婚葬祭・就職活動・取引先訪問。靴が合わないせいで、本来の自分らしさが出せていない瞬間が積み重なっています。</p>
+      </div>
+      <div class="loss-card">
+        <h4>健康な足・姿勢・関節</h4>
+        <p>外反母趾・靴擦れ・腰痛……合わない靴を履き続けた代償は、気づいたときには取り返しがつかないかもしれません。</p>
+      </div>
+      <div class="loss-card">
+        <h4>時間・お金・気力</h4>
+        <p>返品を繰り返すたびに消えていく時間と送料。何軒も回って何も見つからない徒労感。その積み重ねは、何年分になりますか？</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:40px;font-family:var(--serif);font-size:1.1rem;color:var(--gold-lt);line-height:1.8;">
+      「30年以上こうやって生きてきた、今更変わらない」<br>
+      <span style="font-size:0.9rem;color:rgba(255,255,255,0.7);">— そう思っていた方が、来店後こう言います。</span><br>
+      <strong style="color:var(--white);">「もっと早く来ればよかった」</strong>
+    </p>
   </div>
 </section>
 
@@ -314,96 +403,56 @@
 <section class="section bg-white">
   <div class="container">
     <span class="section-eyebrow">ROOT CAUSE</span>
-    <h2 class="section-title">それは、足が悪いのではありません。</h2>
+    <h2 class="section-title">あなたの足は、悪くない。<br>靴が、あなたに合っていなかっただけ。</h2>
     <div class="split">
       <div class="split-img">
         <img src="images/計測.jpg" alt="足の計測・フィッティング" loading="lazy">
       </div>
       <div class="reason-box">
         <h3>
-          <strong>靴が、あなたの足に合っていなかっただけ</strong>です。<br>
-          日本人女性の平均足長は約23cm。<br>22cm以下の方は市場の10%未満。
+          日本人女性の平均足長は約23cm。<br>
+          <strong>22cm以下の方は市場の10%未満。</strong>
         </h3>
         <p>
-          メーカーも量販店も、多数派（23〜24cm）を優先して在庫を積みます。<br>
-          イレギュラーサイズが後回しにされるのは、あなたのせいでも足のせいでもない。<br>
+          「需要があっても、規模が小さければ作らない」<br>
+          それがメーカーと量販店の論理です。<br>
           <br>
-          <strong style="color:#dbb48e;">需要があっても、規模が小さければ作らない。</strong><br>
-          それがこの市場の構造的な問題です。<br>
+          あなたが何年も靴に苦労してきたのは、<strong style="color:#dbb48e;">市場の構造的な問題</strong>のせいです。<br>
           <br>
-          私たちは40年間、ただその問題と向き合い続けてきました。
+          ABCマート・百貨店でさえ22cm以下の婦人靴はほぼ取り扱いがない。<br>
+          ネットで買えるものは「小さいサイズ」と書かれていても子ども用の木型のことが多い。<br>
+          <br>
+          だから、合わなかった。あなたのせいではありません。
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STRENGTHS -->
+<!-- TESTIMONIALS -->
 <section class="section bg-creamdark">
   <div class="container">
-    <span class="section-eyebrow">WHY LADIES'KID</span>
-    <h2 class="section-title">だから、レディースキッドが選ばれます。</h2>
-    <p class="section-lead">「またデザインが少ない」「また合わなかった」を繰り返さないために。</p>
-    <div class="str-grid">
-      <div class="str-card">
-        <img class="str-card-img" src="images/sozai01.png" alt="300種類以上の品揃え" loading="lazy">
-        <div class="str-card-body">
-          <div class="str-card-num">STRENGTH 01</div>
-          <h3>常時300種類以上の品揃え<br>「またデザインが少ない」とは言わせない</h3>
-          <p>パンプス・ブーツ・フォーマル・カジュアル、あらゆるシーンの一足がここにあります。</p>
-        </div>
+    <span class="section-eyebrow">CUSTOMER VOICE</span>
+    <h2 class="section-title">「来て、よかった。」<br>お客様のリアルな声</h2>
+    <p class="section-lead">ずっと諦めていた方が、はじめて足の合う靴と出会った瞬間の言葉です。</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-headline">「20年間、バンドエイドなしで歩けた日がなかった」</p>
+        <p class="testi-text">靴擦れが当たり前すぎて、外出のたびにテープを貼ることが習慣でした。シューフィッターの方に計測してもらったら、<em>今まで1cm以上大きいサイズを履いていたことがわかって。試着した瞬間、踵が浮かなかった。泣きそうになりました。</em></p>
+        <div class="testi-author">40代女性・会社員（足サイズ：21cm）</div>
       </div>
-      <div class="str-card">
-        <img class="str-card-img" src="images/sozai03.png" alt="創業40年の専門知識" loading="lazy">
-        <div class="str-card-body">
-          <div class="str-card-num">STRENGTH 02</div>
-          <h3>創業40年の専門知識と信頼<br>百貨店取引実績が品質の証</h3>
-          <p>40年間、小さいサイズの足の悩みだけと向き合ってきた専門店。新興ECサイトには言えない言葉です。</p>
-        </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-headline">「娘の結婚式に、ようやく大人の靴で出席できた」</p>
+        <p class="testi-text">ずっと子供靴で冠婚葬祭を乗り越えてきました。娘の結婚式が決まって「また子供靴で行くのか」と思ったら情けなくて。こちらで黒パンプスを選んでもらって、<em>一日中歩いても靴擦れゼロ。あんな日が来るとは思わなかった。</em></p>
+        <div class="testi-author">60代女性・主婦（足サイズ：20.5cm）</div>
       </div>
-      <div class="str-card">
-        <img class="str-card-img" src="images/計測.jpg" alt="シューフィッターによる足の計測" loading="lazy">
-        <div class="str-card-body">
-          <div class="str-card-num">STRENGTH 03</div>
-          <h3>シューフィッターが<br>あなたの足を正しく知る</h3>
-          <p>足長だけでなく足幅・甲高・アーチ・踵幅まで計測。ネットで何度も失敗した方こそ、この体験が変わるきっかけになります。</p>
-        </div>
-      </div>
-      <div class="str-card">
-        <img class="str-card-img" src="images/esencia 7.5cm-B.jpg" alt="百貨店クオリティの靴" loading="lazy">
-        <div class="str-card-body">
-          <div class="str-card-num">STRENGTH 04</div>
-          <h3>百貨店クオリティが<br>20cmから揃う</h3>
-          <p>「子供っぽくない」「ちゃんとした大人の靴」が小さいサイズで。冠婚葬祭にも対応できる一足が、ここにあります。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STORY -->
-<section class="section bg-white">
-  <div class="container">
-    <span class="section-eyebrow">OUR STORY</span>
-    <h2 class="section-title">創業40年。小さい足の悩みだけを、<br>追い続けてきた店があります。</h2>
-    <div class="split">
-      <div>
-        <p class="story-para">
-          池袋に店を構えて40年。私たちがずっと向き合ってきたのは、「足が小さい」ただそれだけで靴選びに苦労し続けるお客様の現実でした。
-        </p>
-        <div class="story-quote">
-          「22cmを探して何十年、こんなに選べる場所があるとは知りませんでした」<br>
-          「子供靴で妥協することが当たり前になっていたけど、初めて大人の靴を履けた気がした」
-        </div>
-        <p class="story-para">
-          最初の1人からスタートし、メーカーとのパイプを築き、シューフィッターの資格を取得し、百貨店に認められる品質水準を積み上げてきました。
-        </p>
-        <p class="story-para">
-          足が小さいことは、コンプレックスではなく個性です。<strong>その足に似合う靴を、私たちは300種類以上の中から一緒に探します。</strong>
-        </p>
-      </div>
-      <div class="split-img portrait">
-        <img src="images/ご相談アドバイス.png" alt="シューフィッターによるカウンセリング" loading="lazy">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-headline">「"どうせない"を言わなくなった日」</p>
+        <p class="testi-text">ずっと雑誌を見るたびに「どうせ私のサイズはない」って口に出してたんです。それが口癖になってた。こちらに来てから、<em>なんでも試せる。選べる。そんな当たり前のことが、当たり前じゃなかったんだって気づいてしまいました。</em></p>
+        <div class="testi-author">30代女性・看護師（足サイズ：21cm）</div>
       </div>
     </div>
   </div>
@@ -415,27 +464,70 @@
   <img src="images/603-000162_01.jpg" alt="レディースキッドの靴コレクション" loading="lazy">
 </div>
 
-<!-- TESTIMONIALS -->
+<!-- STRENGTHS -->
+<section class="section bg-white">
+  <div class="container">
+    <span class="section-eyebrow">WHY LADIES'KID</span>
+    <h2 class="section-title">なぜ、レディースキッドだけが<br>あなたの足を救えるのか。</h2>
+    <p class="section-lead">「どこに行っても見つからなかった」という方が選ぶ理由があります。</p>
+    <div class="str-grid">
+      <div class="str-card">
+        <img class="str-card-img" src="images/sozai01.png" alt="300種類以上の品揃え" loading="lazy">
+        <div class="str-card-body">
+          <div class="str-card-num">REASON 01</div>
+          <h3>「またデザインが少ない」は<br>ここでは起きない — 常時300種類以上</h3>
+          <p>パンプス・ブーツ・フォーマル・カジュアル。他の専門店が「在庫が少ない」と言われる中、私たちは妥協を許しません。</p>
+        </div>
+      </div>
+      <div class="str-card">
+        <img class="str-card-img" src="images/sozai03.png" alt="創業40年の専門知識" loading="lazy">
+        <div class="str-card-body">
+          <div class="str-card-num">REASON 02</div>
+          <h3>「また来年も同じ悩み」は<br>させない — 創業40年の専門知識</h3>
+          <p>40年間、小さいサイズの足の悩みだけと向き合い続けてきた。量販店にも新興ECサイトにも、絶対に言えない言葉です。</p>
+        </div>
+      </div>
+      <div class="str-card">
+        <img class="str-card-img" src="images/計測.jpg" alt="シューフィッターによる足の計測" loading="lazy">
+        <div class="str-card-body">
+          <div class="str-card-num">REASON 03</div>
+          <h3>「なぜ合わないか」を<br>科学的に解明 — シューフィッター在籍</h3>
+          <p>足長・足幅・甲高・アーチ・踵幅。サイズの数字だけでは足の形はわかりません。根本から正しく計測するから、根本から変わります。</p>
+        </div>
+      </div>
+      <div class="str-card">
+        <img class="str-card-img" src="images/esencia 7.5cm-B.jpg" alt="百貨店クオリティの靴" loading="lazy">
+        <div class="str-card-body">
+          <div class="str-card-num">REASON 04</div>
+          <h3>子供っぽくない、ちゃんとした<br>大人の靴 — 百貨店取引実績あり</h3>
+          <p>百貨店バイヤーも認めた品質・デザイン。大人の女性として足元でも格を表現できる靴が、20cmから揃います。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
 <section class="section bg-creamdark">
   <div class="container">
-    <span class="section-eyebrow">CUSTOMER VOICE</span>
-    <h2 class="section-title">お客様の声</h2>
-    <p class="section-lead">同じ悩みを持っていた方々からのメッセージです。</p>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">21cmを探して30年、こんなに選べる場所があるとは思いませんでした。シューフィッターの方に計測してもらったら、<em>今まで違うサイズを履いていたことがわかって衝撃でした。</em></p>
-        <div class="testi-author">50代女性・会社員 Aさん</div>
+    <span class="section-eyebrow">OUR PROMISE</span>
+    <h2 class="section-title">「諦めていた足も、<br>本当に合う靴と出会ったことがないだけかもしれません。」</h2>
+    <div class="split">
+      <div>
+        <p style="font-size:0.95rem;line-height:2.2;color:var(--text);margin-bottom:22px;">
+          池袋に店を構えて40年。私たちが向き合い続けてきたのは、「足が小さい」ただそれだけで、当たり前の選択肢から排除されてきた女性たちの現実でした。
+        </p>
+        <blockquote style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);border-left:4px solid var(--gold);padding:14px 20px;margin:22px 0;background:var(--white);border-radius:0 var(--radius) var(--radius) 0;line-height:1.8;">
+          「22cmを探して何十年、こんなに選べる場所があるとは知りませんでした」
+        </blockquote>
+        <p style="font-size:0.95rem;line-height:2.2;color:var(--text);margin-bottom:22px;">
+          そのお言葉を、何百回と聞いてきました。<br>
+          だから私たちはここにいます。<br>
+          <strong>足が小さいことはコンプレックスではなく、個性です。その足に似合う靴を、300種類以上の中から一緒に探させてください。</strong>
+        </p>
       </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">冠婚葬祭のたびにフォーマルの靴が見つからずパニックになっていました。<em>ここで初めて「この靴なら一日中履ける」と思えた黒パンプスに出会えました。</em></p>
-        <div class="testi-author">40代女性・主婦 Bさん（足サイズ：20.5cm）</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">子供靴で妥協することが当たり前になっていたので、<em>大人の木型で作られた靴を履いた瞬間に泣きそうになりました。</em>やっとおしゃれを楽しめそうです。</p>
-        <div class="testi-author">30代女性・看護師 Cさん（足サイズ：21cm）</div>
+      <div class="split-img portrait">
+        <img src="images/ご相談アドバイス.png" alt="シューフィッターによるカウンセリング" loading="lazy">
       </div>
     </div>
   </div>
@@ -445,35 +537,35 @@
 <section class="section bg-dark">
   <div class="container">
     <span class="section-eyebrow" style="color:var(--gold);">FLOW</span>
-    <h2 class="section-title">ご来店からお渡しまでの流れ</h2>
+    <h2 class="section-title">「今日こそ終わりにする」<br>来店から一足を見つけるまで</h2>
     <div class="flow-wrap">
       <div class="flow-list">
         <div class="flow-item">
           <div class="flow-num">1</div>
           <div class="flow-text">
-            <h4>お電話でご予約</h4>
-            <p>希望日時・お名前・足のサイズをお知らせください。専任スタッフがご確認します。</p>
+            <h4>お電話でご予約（1分）</h4>
+            <p>希望日時・お名前・足のサイズをお知らせください。当日もお電話いただければ可能な限り対応します。</p>
           </div>
         </div>
         <div class="flow-item">
           <div class="flow-num">2</div>
           <div class="flow-text">
-            <h4>足の計測・カウンセリング（約15〜20分）</h4>
-            <p>シューフィッターが足長・足幅・甲高・アーチ・踵幅を計測。今まで合わなかった原因を明確にします。</p>
+            <h4>足の「根本計測」（約15〜20分）</h4>
+            <p>シューフィッターが足長・足幅・甲高・アーチ・踵幅を精密計測。「今まで合わなかった本当の理由」が初めてわかります。</p>
           </div>
         </div>
         <div class="flow-item">
           <div class="flow-num">3</div>
           <div class="flow-text">
-            <h4>あなたに合う一足をご提案・試着</h4>
-            <p>300種類以上の在庫から、サイズ・用途・デザインの希望に合わせて複数提案。じっくり試着してお選びいただけます。</p>
+            <h4>300種類以上の中から提案・試着</h4>
+            <p>用途・デザイン・ライフスタイルに合わせて複数ご提案。「またデザインが少ない」とは言わせません。</p>
           </div>
         </div>
         <div class="flow-item">
           <div class="flow-num">4</div>
           <div class="flow-text">
-            <h4>フィッティング調整でぴったりに</h4>
-            <p>インソール・パッドでさらなるフィット感を追求。「痛くない・脱げない・前滑りしない」を実現します。</p>
+            <h4>フィッティング調整で完成</h4>
+            <p>インソール・パッドで仕上げ調整。「痛くない・脱げない・前滑りしない」を確認してお渡しします。</p>
           </div>
         </div>
       </div>
@@ -492,23 +584,23 @@
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">何cmから対応していますか？</div>
-        <div class="faq-a">20cmから対応しております。21.5cm以下のイレギュラーサイズを専門に取り扱っています。</div>
+        <div class="faq-a">20cmから対応しております。21.5cm以下のイレギュラーサイズを専門に扱っています。量販店でキッズコーナーに案内されてきた方も、ここでは大人女性向けの木型の靴を選んでいただけます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">子供靴と大人靴の違いは何ですか？</div>
-        <div class="faq-a">木型（ラスト）の設計が根本的に異なります。子供靴は大人の体重・歩行に耐える設計ではありません。当店の靴はすべて大人女性向けの木型で作られています。</div>
+        <div class="faq-q">ネットで何度も失敗しています。実店舗は違いますか？</div>
+        <div class="faq-a">まったく違います。ネットで合わない最大の理由は「足長のサイズしか見ていないから」です。当店では足幅・甲高・アーチ・踵幅まで計測してから靴を選びます。根本から解決するアプローチが違います。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">予約なしで来店できますか？</div>
-        <div class="faq-a">フィッティングカウンセリングは完全予約制です。じっくりお時間をとってご対応するため、事前にお電話でご予約をお願いします。</div>
+        <div class="faq-q">予約は必要ですか？</div>
+        <div class="faq-a">フィッティングカウンセリングは完全予約制です。お電話一本でご予約いただけます。当日の急なご予約もできる限り対応しますので、まずはお電話ください。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">フォーマルシーンや冠婚葬祭にも対応できますか？</div>
-        <div class="faq-a">はい、黒のパンプスをはじめフォーマル対応の靴も豊富にございます。急なご入用の場合もお気軽にお電話ください。</div>
+        <div class="faq-q">冠婚葬祭・フォーマルシーンに間に合いますか？</div>
+        <div class="faq-a">はい。黒パンプスをはじめフォーマル対応の靴も豊富に在庫しております。急なご入用でもお気軽にお電話ください。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">価格帯を教えてください。</div>
-        <div class="faq-a">商品により異なりますが、百貨店クオリティの品質を小さいサイズで実現しています。お電話でご予算に合わせたご提案も承ります。</div>
+        <div class="faq-q">外反母趾や足の痛みがありますが、相談できますか？</div>
+        <div class="faq-a">はい、ぜひご相談ください。シューフィッターが足の状態を確認しながら、症状を悪化させない靴選び・インソールのご提案をします。</div>
       </div>
     </div>
   </div>
@@ -517,10 +609,14 @@
 <!-- CTA -->
 <section class="cta-band">
   <div class="container">
-    <h2>まずは、お電話ください。<br>一緒に一足を見つけましょう。</h2>
-    <p>「どうせ合わない」と諦めているその感覚が、<br>一度のフィッティング体験で変わるかもしれません。</p>
+    <h2>その我慢、今日で終わりにしませんか。<br>まず、お電話ください。</h2>
+    <p>
+      「どうせ変わらない」と思っていた方ほど、<br>
+      来店後に「もっと早く来ればよかった」と言います。<br>
+      一度だけ、試してみてください。
+    </p>
     <a href="tel:0339813456" class="tel-cta-big">03-3981-3456</a>
-    <p class="tel-cta-hours">営業時間：11:00〜20:00（年中無休）／ 池袋</p>
+    <p class="tel-cta-hours">営業時間：11:00〜20:00（年中無休）／ 池袋駅近</p>
   </div>
 </section>
 
@@ -536,8 +632,8 @@
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
 }, { threshold: 0.1 });
-document.querySelectorAll('.str-card, .testi-card, .empathy-item, .faq-item, .flow-item').forEach(el => {
-  el.style.cssText += 'opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease';
+document.querySelectorAll('.str-card,.testi-card,.voice-item,.pain-card,.loss-card,.faq-item,.flow-item').forEach(el => {
+  el.style.cssText += 'opacity:0;transform:translateY(20px);transition:opacity 0.55s ease,transform 0.55s ease';
   observer.observe(el);
 });
 </script>
