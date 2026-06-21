@@ -142,7 +142,13 @@
     /* ===== SYMPTOMS ===== */
     .symptom-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; max-width: 840px; margin: 0 auto 36px; }
     .symptom-card { background: var(--white); border-radius: var(--radius); border-left: 4px solid var(--coral); padding: 20px 18px; box-shadow: 0 2px 10px var(--shadow-sm); }
-    .symptom-icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .symptom-num {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--coral); color: #fff;
+      font-family: var(--serif); font-size: 0.82rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 12px; letter-spacing: 0.05em;
+    }
     .symptom-card h4 { font-family: var(--serif); font-size: 0.92rem; color: var(--coral-dk); margin-bottom: 7px; }
     .symptom-card p   { font-size: 0.8rem; color: var(--text-mid); line-height: 1.85; }
     .symptom-quote { font-size: 0.75rem; color: var(--text-lt); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--gray-md); font-style: italic; }
@@ -335,37 +341,37 @@
     <p class="sec-lead">「靴が小さいから痛い」のではありません。「靴が合っていないから」です。</p>
     <div class="symptom-grid">
       <div class="symptom-card">
-        <div class="symptom-icon">🩹</div>
+        <div class="symptom-num">01</div>
         <h4>靴擦れ・マメの慢性化</h4>
         <p>バンドエイドやテープが手放せない。外出のたびに痛みと戦い、帰宅後は足を見るのが怖い。</p>
         <p class="symptom-quote">「バンドエイドを3枚貼らないと歩けなかった」</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">👣</div>
+        <div class="symptom-num">02</div>
         <h4>前滑り・爪トラブル</h4>
         <p>大きめの靴で足が前に滑り、爪が靴先に当たり続ける。爪が黒くなったり、割れたり、巻き爪になる。</p>
         <p class="symptom-quote">「爪が黒くなって、夏もサンダルが履けなかった」</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🦶</div>
+        <div class="symptom-num">03</div>
         <h4>踵パカパカ・疲れやすい</h4>
         <p>踵が浮いてパカパカする靴は歩行が不安定になり、足腰への余計な負担で夕方には足がむくむ。</p>
         <p class="symptom-quote">「少し歩いただけで足がパンパンになる」</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🦴</div>
+        <div class="symptom-num">04</div>
         <h4>外反母趾・内反小趾の進行</h4>
         <p>合わない靴を長年履き続けると足の変形が進む。痛みが慢性化し、歩くこと自体がストレスになる。</p>
         <p class="symptom-quote">「外反母趾が悪化して、選べる靴がさらに減った」</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">💆</div>
+        <div class="symptom-num">05</div>
         <h4>腰痛・膝痛・肩こりの遠因</h4>
         <p>足元のバランスが崩れると膝・腰・肩まで影響する。慢性痛の根本が「靴」だったケースは少なくない。</p>
         <p class="symptom-quote">「整体に通っていたが、靴を変えたら腰痛が軽くなった」</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">😰</div>
+        <div class="symptom-num">06</div>
         <h4>外出・旅行への不安</h4>
         <p>「どうせまた足が痛くなる」と外出が億劫に。旅行は終日歩くため、靴の問題が旅全体への不安になる。</p>
         <p class="symptom-quote">「旅行先で歩くのがつらくて、家族に申し訳なかった」</p>
